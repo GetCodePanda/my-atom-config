@@ -1,0 +1,84 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+'.source.js':
+# console.log
+  'Console log':
+    'prefix': 'log'
+    'body': 'console.log($1)'
+# es5 import for js files (mostly we use in node js)..
+  'ES5 Import Default':
+    'prefix': 'i5'
+    'body': 'const $1 = require("$2")'
+# es5 object destructing way..
+  'ES5 Import Object':
+    'prefix': 'io5'
+    'body': 'const {$1} = require("$2")'
+# es6 import..
+  'ES6 Import ':
+    'prefix': 'i6'
+    'body': 'import {$1} from "$2"'
+# es5 object destructing way..
+  'ES6 Import Object':
+    'prefix': 'io6'
+    'body': 'import {$1} from "$2"'
+# const variable assigning ..
+  'const variable assign':
+    'prefix': 'ct'
+    'body': 'const $1 = $2'
+# let variable assigning ..
+  'const variable assign':
+    'prefix': 'vlt'
+    'body': 'let $1 = $2'
+# function expression ..
+  'function expression':
+    'prefix': 'afe'
+    'body': 'const $1 = ($2)=>$3{$4}'
+
+# typescript
+'.source.ts':
+# console.log
+  'Console log':
+    'prefix': 'log'
+    'body': 'console.log($1)'
+# es5 import for js files (mostly we use in node js)..
+  'ES5 Import Default':
+    'prefix': 'i5'
+    'body': 'const $1 = require("$2")'
+# es5 object destructing way..
+  'ES5 Import Object':
+    'prefix': 'io5'
+    'body': 'const {$1} = require("$2")'
+# es6 import..
+  'ES6 Import ':
+    'prefix': 'i6'
+    'body': 'import {$1} from "$2"'
+# es5 object destructing way..
+  'ES6 Import Object':
+    'prefix': 'io6'
+    'body': 'import {$1} from "$2"'
+# const variable assigning ..
+  'const variable assign':
+    'prefix': 'ct'
+    'body': 'const $1 = $2'
+# let variable assigning ..
+  'const variable assign':
+    'prefix': 'vlt'
+    'body': 'let $1 = $2'
+# function expression ..
+  'function expression':
+    'prefix': 'afe'
+    'body': 'const $1 = ($2)=>$3{$4}'
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
